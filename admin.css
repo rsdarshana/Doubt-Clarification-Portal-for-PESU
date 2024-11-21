@@ -1,0 +1,86 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('image_dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #f8484b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout a:hover {
+    background-color: #b30000;
+}
+
+/* Main content styling */
+.content {
+    margin-top: 100px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.content h2 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 175px;
+    margin-top: 33px;
+}
+
+.btn-secondary {
+    padding: 10px 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+}

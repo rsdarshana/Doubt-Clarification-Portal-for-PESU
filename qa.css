@@ -1,0 +1,167 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('image_dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #f8484b;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.logout a:hover {
+    background-color: #b30000;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter and Search Form Styling */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+form label, form select, form input, form button {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    background-color: #27ae60;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Questions and Answers Display */
+.questions {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.question {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.question:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.question h2 {
+    font-size: 1.5em;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.question p {
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+.question h3 {
+    font-size: 1.2em;
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+.question ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.question li {
+    padding: 10px;
+    background-color: #ecf0f1;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: #2c3e50;
+    transition: background-color 0.3s ease;
+}
+
+.question li:hover {
+    background-color: #d1e7dd;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .question h2 {
+        font-size: 1.3em;
+    }
+
+    .question h3 {
+        font-size: 1.1em;
+    }
+}

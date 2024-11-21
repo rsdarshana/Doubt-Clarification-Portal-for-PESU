@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('image_dashboard.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #f8484b;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.logout a:hover {
+    background-color: #b30000;
+}
+
+/* Styling for Leaderboard Section */
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Leaderboard Table Styling */
+#leaderboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Header Row Styling */
+#leaderboard thead tr {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#leaderboard thead th {
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Body Row Styling */
+#leaderboard tbody tr {
+    transition: background-color 0.3s ease;
+    color: #333;
+}
+
+#leaderboard tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#leaderboard tbody tr:hover {
+    background-color: rgba(76, 175, 80, 0.1);
+    transform: scale(1.02);
+}
+
+#leaderboard tbody td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+#leaderboard tbody td:hover {
+    color: #4CAF50;
+}
+
+/* Smooth Reveal Animation for Leaderboard Table */
+#leaderboard {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Animation */
+.logout a {
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.logout a:hover {
+    transform: scale(1.05);
+}
+
+/* General Text Shadow */
+#leaderboard h2, .dashboard-title {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
